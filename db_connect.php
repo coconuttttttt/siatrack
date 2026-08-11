@@ -2,11 +2,12 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$dbname = "siatrack_db"; // PALITAN MO ITO: Gawaing 'siatrack_db' para mag-match sa VM
+$dbname = "siatrack_db";
+$port = 3307;
 
-$conn = new mysqli($host, $user, $pass, $dbname);
+$conn = new mysqli($host, $user, $pass, $dbname, $port);
 
-if($conn->connect_error){
+if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 ?>
