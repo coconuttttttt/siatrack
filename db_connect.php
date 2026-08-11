@@ -1,13 +1,13 @@
 <?php
 $host = "localhost";
 $user = "root";
+$pass = "";
 $dbname = "siatrack_db";
-$port = 3306; // Binalik sa default MySQL port (3306)
+$port = 3306;
 
 $conn = new mysqli($host, $user, $pass, $dbname, $port);
 
-$passwords_to_try = ["", "root", "admin", "1234"]; 
-
+$passwords_to_try = ["", "root", "admin", "1234"];
 
 $conn = null;
 
@@ -15,7 +15,7 @@ foreach ($passwords_to_try as $pwd) {
     try {
         $conn = @new mysqli($host, $user, $pwd, $dbname);
         if (!$conn->connect_error) {
-            break;  
+            break;
         }
     } catch (Exception $e) {
     }
