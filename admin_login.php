@@ -13,7 +13,6 @@ if (isset($_POST['login'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Static Credentials
     $admin_user = "admin";
     $admin_pass = "siatrack2026"; 
 
