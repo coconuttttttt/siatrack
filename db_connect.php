@@ -11,7 +11,7 @@ foreach ($passwords_to_try as $pwd) {
     try {
         $conn = @new mysqli($host, $user, $pwd, $dbname);
         if (!$conn->connect_error) {
-            break; 
+            break;  
         }
     } catch (Exception $e) {
     }
