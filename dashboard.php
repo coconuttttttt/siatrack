@@ -9,7 +9,7 @@
     <style>
         * { box-sizing: border-box; font-family: 'Poppins', sans-serif; margin: 0; padding: 0; }
         body { 
-            background-color: #271404;
+            background-color: #dbe0e4;
             display: flex; 
             justify-content: center; 
             align-items: center; 
