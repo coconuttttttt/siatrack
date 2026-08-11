@@ -121,7 +121,7 @@
             align-items: center;
             text-align: center;
             margin: 20px 0;
-            color: #333;
+            color: #333; 
             font-size: 13px;
             font-weight: 500;
         }
